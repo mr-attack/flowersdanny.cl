@@ -2,7 +2,7 @@ body {
   background: #FDC3C6;
   background: linear-gradient(#FDC3C6, #CE8E8B);
   color: white;
-  cursor: url('../images/bouquet.png'), auto;	
+  cursor: url('../images/bouquet_cursor.png'), auto;	
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   height: 100vh;
