@@ -1,10 +1,23 @@
+@font-face {
+   font-family: 'Value';
+   src: url('../fonts/value-regular.woff');
+}
+
+@font-face {
+   font-family: 'Value';
+   font-weight: bold;
+   src: url('../fonts/value-bold.woff');
+}
+
+* {
+   font-family: 'Value', sans-serif;
+}
+
 body {
   background: #FDC3C6;
   background: linear-gradient(#FDC3C6, #CE8E8B);
   color: white;
   cursor: url('../images/bouquet_cursor.png'), auto;	
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 400;
   height: 100vh;
   line-height: calc(1em + 0.5vw);  
   margin: 0;
@@ -15,10 +28,11 @@ body {
 }
 
 footer {
-  width: 100vw;
-  position: fixed;
   bottom: 0px;
+  position: fixed;
+  width: 100vw;
 }
+  
 
 footer p {
   text-align: right;
@@ -28,23 +42,15 @@ footer a {
   margin-left: 1vw;
 }
 
-.location i {
-  margin-right: 1vh;
-}
-
 h1 {
-  font-weight: bold;
   font-style: italic;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 580px) {
   h1 {
     line-height: 1.15em;
   }
-}
-
-p, a {
-  font-size: 16px;
 }
 
 /* fluid typography functions by Indrek Paas @indrekpaas */
@@ -69,12 +75,25 @@ p, a {
 }
 
 a {
-	text-decoration: none;
-	color: #FDC3C6;
+  color: #FDC3C6;
+  text-decoration: none;
 }
 
-a:hover {
-  color: white
+a svg {
+  fill: #FDC3C6;
+}
+
+.location svg, .phone svg {
+  height: calc(13px + 2 * (100vw - 320px) / 660);
+}
+
+.social svg {
+  height: calc(20px + 2 * (100vw - 320px) / 660);
+  margin-left: 1vh;
+}
+
+.location:hover, .phone:hover, .social:hover {
+  color: white;
 }
 
 .container {
