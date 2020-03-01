@@ -84,7 +84,7 @@ a svg {
 }
 
 .location svg, .phone svg {
-  height: calc(13px + 2 * (100vw - 320px) / 660);
+  height: calc(12px + 2 * (100vw - 320px) / 660);
 }
 
 .social svg {
@@ -97,9 +97,9 @@ a svg {
 }
 
 .container {
-  width: 80vw;
   margin: 0 auto;
   padding: 20vh 0 5vh 0;
+  width: 80vw;
 }
 
 .container-short {
